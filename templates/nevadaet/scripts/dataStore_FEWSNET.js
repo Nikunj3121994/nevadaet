@@ -15,64 +15,88 @@ var temp = {   //fid,cid,column,selectid,styleId,templateId//
 $.extend(ftDefaults,temp);
 
 styles_ftOutlines={
-    'fewscountries': {
-            'styleId': 403,
-            'templateId': 398
+     'states': {
+        'styleId': 2,
+        'templateId':2
     },
-    'fewsadmin1overlayer': {
-            'styleId': 2,
-            'templateId': 3
-         },
-    'fewsadmin2overlayer': {
-            'styleId': 2,
-            'templateId': 2
-         },
-    'fewscropzoneoverlayer': {
-            'styleId': 3,
-            'templateId':3
-         },
-    'fewslivelihoodzoneoverlayer': {
-            'styleId':2 ,
-            'templateId':2
-         },
+    'counties': {
+        'styleId': 2,
+        'templateId': 2
+    },
+    'divisions': {
+        'styleId': 2,
+        'templateId': 2
+    },
+    'psas': {
+        'styleId': 2,
+        'templateId':2
+        },
+    'custom': {
+        'styleId':2 ,
+        'templateId':2
+    },
+   /* 'statesb': {
+	'styleId':2,
+	'templateId':2
+    },
+    'divisionsb': {
+	'styleId':2,
+	'templateId':2
+    },
+    'phreats': {
+	'styleId':2,
+	'templateId':2
+    }, */
 };
 
 styles_ftLayers ={
-    'fewscountries': {
-            'strokeColor':'#000000',
-            'fillColor': '#000000',
-            'fillOpacity': 0.01,
-         },
-    'fewsadmin1overlayer': {
-            'strokeColor':'#800080',
-            'fillColor': '#800080',
-            'fillOpacity': 0.01
-         },
-    'fewsadmin2overlayer': {
-            'strokeColor':'#0000ff',
-            'fillColor': '#0000ff',
-            'fillOpacity': 0.01
-         },
-    'fewscropzoneoverlayer': {
-            'strokeColor':'#ff0000',
-            'fillColor': '#ff0000',
-            'fillOpacity': 0.01
-         },
-    'fewslivelihoodzoneoverlayer': {
-            'strokeColor':'#008000',
-            'fillColor': '#008000',
-            'fillOpacity': 0.01
-         },
+    'states': {
+        'strokeColor':'#000000',
+        'fillColor': '#000000',
+        'fillOpacity': 0.1
+    },
+    'counties': {
+        'strokeColor':'#800080',
+        'fillColor': '#800080',
+        'fillOpacity': 0.1
+    },
+    'divisions': {
+        'strokeColor':'#0000ff',
+        'fillColor': '#0000ff',
+        'fillOpacity': 0.1
+    },
+    'psas': {
+        'strokeColor':'#000000',
+        'fillColor': '#00b200',
+        'fillOpacity': 0.4
+    },
     'polygon': {
-            'strokeColor':'#008000',
-            'fillColor': '#008000',
-            'fillOpacity': 0.01
-         },
+        'strokeColor':'#008000',
+        'fillColor': '#008000',
+        'fillOpacity': 0.1
+    },
     'custom': {
-            'strokeColor':'#008000',
-            'fillColor': '#008000',
-            'fillOpacity': 0.01 //was 0.1
-         }
+        'strokeColor':'#008000',
+        'fillColor': '#008000',
+        'fillOpacity': 0.1
+    },
+
+   /* 'statesb': {
+        'strokeColor':'#000000',
+        'fillColor': '#000000',
+        'fillOpacity': 0.1
+    },
+
+    'divisionsb': {
+        'strokeColor':'#0000ff',
+        'fillColor': '#0000ff',
+        'fillOpacity': 0.1
+    },
+    'phreats': {
+        'strokeColor':'#000000',
+        'fillColor': '#000000',
+        'fillOpacity': 0.1
+    }, */
 }
 
 
@@ -97,7 +121,7 @@ zoom9countries=translate2Dict(zoom9countries);
 
 
 //FEWS Livelihoods (GAULS?)
-var ft_fewsGAULS={
+/*var ft_fewsGAULS={
     'Afghanistan':['1T96RidZY-XYXxrzT1l2qLRzkdhpUwFWBgzuP-k6t','LZNAME',''],
     'Angola':['1AOlTxdLGnBkATyIIEU7PmSGri8nwPaB_c_rE7rPS','LZNAME',''],
     'Burkina Faso':['1q06p9uRplV-YisB5WYfrZRaq4fSBiKWPwnlkrgVM','LZNAME',''],
@@ -137,7 +161,7 @@ var ft_fewsGAULS={
 }
 //might be missing Sudan, Sierra Leone, Somalia
 
-fewsCountries=Object.keys(ft_fewsGAULS);
+fewsCountries=Object.keys(ft_fewsGAULS); */
 
 
 //=======================

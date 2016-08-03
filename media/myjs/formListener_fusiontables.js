@@ -305,7 +305,7 @@
         }, // anon function
 		error:function(){
 			status=false;
-               	        $('#buttonmessage'+String(ft_id)).html('<span style="color:red">Loading Failed</span>');
+               	        $('#buttonmessage'+String(ft_id)).html('<span style="color:green">Loading Failed</span>');
 		},
         }); // ajax
 		return status;
